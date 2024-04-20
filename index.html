@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Rohan Bhowmick Portfolio</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <style>
+    .popup {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 9999;
+    }
+    .popup img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 80%;
+        max-height: 80%;
+    }
+</style>
+
+
+
+  
+</head>
+
+<body>
+  
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Rohan Bhowmick</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="https://github.com/RohanBick" class="github"><i class="bx bxl-github"></i></a>
+          <a href="https://www.linkedin.com/in/rohan-bhowmick-45a706138/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          <a href="forms/Rohan_Bhowmick_Resume.pdf" target="_blank" rel="noopener noreferrer"><span class="bx bxs-download"></span></a>
+        </div>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="#education" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Education & Skills</span></a></li>
+          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Work Experience & Projects</span></a></li>
+          <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
+          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>Rohan Bhowmick</h1>
+      <p>I'm <span class="typed" data-typed-items="Full Stack Developer, Freelancer, Engineer, Designer"></span></p>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+
+
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>About Me</h2>
+          <p>Passionate and adaptable computer science professional with a robust background in software engineering and full-stack development. Experienced in leading innovative projects spanning banking, e-commerce, and IoT solutions. Committed to leveraging technology for social impact and continuous personal and professional growth.</p>
+        </div>
+        <p> Wait, too boring? Lets do it again!</p>
+
+
+
+        <section id="aboutme2" class="services">
+          <div class="container">
+            <div >
+              <h4 class="title" style="font-size: 25px;"><a href="">  -  Pixel pioneer, Melophile, Digital Junkie from <span style="color: red; size: 20px;">&#x2764;</span></a></h4>
+            </div><br>
+            <div >
+              <h4 class="title" style=" font-size: 25px;"><a href="">  -  Passionate designer of web &#128421; and app &#128241; from high school &#128526;</a></h4>
+            </div><br>
+
+            <div >
+              <h4 class="title" style=" font-size: 25px;"><a href="">  -  Proficient Developer of React, Angular, HTML/CSS/JS and Java Lover. </a></h4>
+            </div><br>
+
+
+
+            <div>
+              <h4 class="title" style="font-size: 25px;">
+                  <a href="#" id="popup-trigger"> - Hugeee Horror geek!!! &#128123;&#128123; <p style="font-size: 10px">(Click me, if you daree!)</p></a>
+              </h4>
+          </div><br>
+          <div class="popup" id="popup">
+              <img src="assets/img/portfolio/scare.jpg" alt="Horror Image">
+          </div>     
+          <script>
+              document.getElementById('popup-trigger').addEventListener('click', function() {
+                  document.getElementById('popup').style.display = 'block';
+              });
+              document.getElementById('popup').addEventListener('click', function() {
+                  document.getElementById('popup').style.display = 'none';
+              });
+          </script>
+
+
+
+          <div >
+              <h4 class="title" style=" font-size: 25px;"><a href="">  -  A high &#128400; if you feel the samee</a></h4>
+              <ul style="list-style-type: disc; margin-left: 150px;  font-size: 20px">
+                <li>Fav Stress Relief : Guitar, Beer & Campfire | Video Games | Netflix & Chill.</li>
+                <li>Fav Mood Lightners : The Office, Friends & Peaky Blinders.</li>
+                <li>All Time Explorer in Food, Politics, Space  & Hiking Addict.</li>
+                <li>Chocophile at night &#127851; &#127849; &#127850;</li>
+            </ul>
+            </div><br>
+
+
+            <div >
+              <h4 class="title" style="font-size: 25px;"><a href="">  -  Proud and Passionate Software Developer, Data Analyst, ML Engineer and Freelancer. </a></h4>
+            </div><br>
+
+            <div >
+              <h4 class="title" style=" font-size: 25px;"><a href="">  -  Certified Core JAVA, MS Tech Associate, AWS Associate Solutions Architect. </a></h4>
+            </div><br>
+           
+    
+          </div>
+        </section>
+       
+      </div>
+    </section><!-- End About Section -->
+
+
+    
+
+
+        <!-- ======= Facts Section ======= -->
+        <section id="facts" class="facts">
+          <div class="container">
+    
+            <div class="section-title">
+              <h2>Facts</h2>
+            </div>
+    
+            <div class="row no-gutters">
+    
+              <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
+                <div class="count-box">
+                  <i class="bi bi-cup-hot-fill"></i>
+                  <span data-purecounter-start="0" data-purecounter-end="700" data-purecounter-duration="1" class="purecounter"></span>
+                  <p><strong>Coffee Cups</strong> <br>coffee cups used during development</p>
+                </div>
+              </div>
+    
+              <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="100">
+                <div class="count-box">
+                  <i class="bi bi-journal-richtext"></i>
+                  <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1" class="purecounter"></span>
+                  <p><strong>Projects Completed</strong> <br> Number of projects Completed</p>
+                </div>
+              </div>
+    
+              <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="200">
+                <div class="count-box">
+                  <i class="bi bi-bar-chart-line-fill"></i>
+                  <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1" class="purecounter"></span>
+                  <p><strong>Years Of Experience</strong> Including work experience and contract jobs</p>
+                </div>
+              </div>
+    
+              <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="300">
+                <div class="count-box">
+                  <i class="bi bi-journal-check"></i>
+                  <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1" class="purecounter"></span>
+                  <p><strong>Total Achievements</strong> Achievements till now</p>
+                </div>
+              </div>
+    
+            </div>
+    
+          </div>
+        </section><!-- End Facts Section -->
+    
+
+
+
+
+    <!--Education section-->
+     <!-- ======= Portfolio Section ======= -->
+     <section id="education" class="portfolio section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Education</h2>
+        </div>
+        
+        
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100" >
+
+          
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app" style="margin-left: 150px">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="" style="height:100px">
+              <br><br>
+              <p1 style="color: #272829; font-size:medium">Masters in Computer Science</p1><br>
+              <p2 style="color: #272829; font-size:small">2022 - 2024</p2><br>
+              <p2 style="color: #272829; font-size:small">CGPA: 3.71 / 4</p2><br>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title=" Masters in Computer Science | Welcome Ambassador | Ambassador of International Student Commitee."><i class="bx bx-plus"></i></a>
+                <a href="https://www.syracuse.edu/" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web" style="margin-left: 80px">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="" style="height:100px;width:500px">
+              <br><br>
+              <p1 style="color: #272829; font-size:medium">Bachelors in Computer Science</p1><br>
+              <p2 style="color: #272829; font-size:small">2016 - 2020</p2><br>
+              <p2 style="color: #272829; font-size:small">CGPA: 8.86 / 10</p2><br>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-2-new.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title=" Bachelors in Computer Science | Android Club Head | 2 time national hackhathon winner | Recieved Academics Honour for launching app for students and teachers | VIT event organizer 2018-2019."><i class="bx bx-plus"></i></a>
+                <a href="https://vit.ac.in/" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          
+
+        
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+
+
+    <!-- ======= Skills Section ======= -->
+    <section id="education" class="skills section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Skills</h2>
+        
+        </div>
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6" data-aos="fade-up">
+
+            <div class="progress">
+              <span class="skill">JAVA <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">C/C++ <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">JavaScript <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Python <i class="val">95%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">C# <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">ReactJS <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">AngularJS <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">NodeJS <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Express.JS <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Kotlin <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Swift <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">MySQL/Postgres/Firebase/MongoDB/SQlite/DynamoDB <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+
+            <div class="progress">
+              <span class="skill">Shell <i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Git <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Linux/UNIX <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Django <i class="val">60%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+
+            
+            <div class="progress">
+              <span class="skill">AWS <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Azure <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Android Studio <i class="val">95%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">PowerBI <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Splunk <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Jasper reports/ ireports <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Docker<i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Azure DevOps <i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Github Enterprise Cloud <i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Selenium <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Terraform <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Microsoft Excel/Word/Presentation <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Ansible <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">SpringBoot <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Confluence <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">JIRA <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Skills Section -->
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Work Experience</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up">
+           
+            <div class="resume-item">
+              <h4>Software Engineer</h4>
+              <h5>May 2023 - August 2023</h5>
+              <p><em>Regions Bank, Birmingham-AL, USA</em></p>
+              <ul>
+                <li>Engineered Python Scripts to facilitate REST API calls to GHEC, retrieving crucial metrics and enhancing monitoring capabilities
+                  achieving an efficiency metric of 94% and established APIs facilitating the migration from Azure DevOps to GHEC platform.</li>
+                <li>Leveraged and transformed data into impactful PowerBI and Splunk dashboards, yielding a 25% operational efficiency boost and
+                  15% compliance increase.</li>
+                
+              </ul>
+            </div>
+            <br>
+            <div class="resume-item">
+              <h4>Software Engineer</h4>
+              <h5>July 2020 - August 2022</h5>
+              <p><em>Standard Chartered Bank, Bengaluru, India</em></p>
+              <ul>
+                <li>Led the creation and development of end-to-end banking systems during 2 years of professional experience, designing solutions
+                  and leveraging technologies such as Java/J2EE, webservices, Spring Boot, AngularJS, ReactJS, GIT, PostgreSQL, MySQL,
+                  NodeJS, Jasper reports and Selenium. Additionally, played a critical role in software builds, release, and deployment processes.</li>
+                <li>Managed and facilitated projects with a team of 6 including Asia Miles integration with Hong Kong division and Customer
+                  Origination application, performed high to medium complexity source code development.</li>
+                
+              </ul>
+            </div>
+
+           
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            
+            <div class="resume-item">
+              <h4>Full Stack Developer (Contract)</h4>
+              <h5>January 2018 - February 2019</h5>
+              <p><em>KGE Technologies Pvt. Ltd, Remote </em></p>
+              <ul>
+                <li>Created an e-commerce website and App for a start-up company and integrated project with Amazon S3 bucket and hosted website in
+                  EC2 instance server and helped in debugging and reviewing code. Swift, ReactJS, MySQL, AWS, Java and Firebase was used.</li>
+                <li>Monitored company's website security and enhanced it by more 55 % including debugging and continued traffic growth.</li>
+              </ul>
+            </div>
+            <br>
+            <div class="resume-item">
+              <h4>Cloud Engineer / Full Stack Developer (Contract)</h4>
+              <h5>August 2017 - March 2018</h5>
+              <p><em>Go Offer HyperLocal, Remote</em></p>
+              <ul>
+                <li>Revitalized the application by optimizing ReactJS front end and server-side, boosting performance by 20%. Streamlined database
+                  operations with PostgreSQL and Redis, reducing query response times by 30%. Significantly improved accessibility by enabling
+                  public access to the website and remote desktop ports on IIS, leading in a remarkable 40% enhancement.</li>
+                <li>Improved latency speed by 80 % by implementing REST/HTTP APIs, including JSON data formats and API versioning strategy.
+                  Deployed website by using MERN stack on Linux server.</li>
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Resume Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Projects</h2>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/smarthelmet.jpg" class="img-fluid" alt=""><br>
+              <p1 style="color: #212431; font-size:medium">Smart Helmet- IOT and Cloud Helmet</p1><br>
+              <p2 style="color: #212431; font-size:small">July 2018</p2><br>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/smarthelmet.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="● Built and designed a smart helmet for coal miners to real time monitor different conditions with initial warning intelligence on harmful
+                gases, helmet removal, collision detection in mining areas resulting in an outstanding 95% accuracy rate for condition detection. Achieved
+                a 25% improvement in data accessibility with cloud. Used C/C++ for Arduino scripts.
+                ● RF module was used for information transfer and deployed cloud system for integration with database system."><i class="bx bx-plus"></i></a><br>
+                <a href="https://github.com/RohanBick?tab=repositories" title="More Details"><i class="bx bx-link"></i></a>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/zschedule.jpg"  alt="" height="255px">
+              <p1 style="color: #212431; font-size:medium">Zschedule Application for VIT</p1><br>
+              <p2 style="color: #212431; font-size:small">July 2017</p2><br>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/zschedule.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Built Android and IOS (Swift) applications made for students to keep a track of attendance and homework assigned by teachers."><i class="bx bx-plus"></i></a>
+                <a href="https://github.com/RohanBick?tab=repositories" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/quicktut.jpg" alt="" height="255px">
+              <p1 style="color: #212431; font-size:medium">QuickTUT Application for VIT</p1><br>
+              <p2 style="color: #212431; font-size:small">November 2016</p2><br>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/quicktut.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Developed an app for first year students to quickly review important concepts and formulas before exam with Swift, Android Studio and Firebase."><i class="bx bx-plus"></i></a>
+                <a href="https://github.com/RohanBick?tab=repositories" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/cancerfree.jpg" height="255px" alt="">
+              <p1 style="color: #212431; font-size:medium">CancerFREE- Website for cancer patients</p1><br>
+              <p2 style="color: #212431; font-size:small">August 2019</p2><br>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/cancerfree.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="● Implemented a website with a prediction model to detect diseases with efficiency of 92% with inputs of symptoms
+                from user and devised a section to produce necessary information of different cancers, causes and symptoms.
+                ● Provided feature of tracking nearest multi-specialty hospital for treatment of cancer victims. Used Python, AngularJS, Java for development."><i class="bx bx-plus"></i></a>
+                <a href="https://github.com/RohanBick?tab=repositories" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/ccc.jpg" height="255px" alt="">
+              <p1 style="color: #212431; font-size:medium">Cuse Cafe Connect for Syracuse</p1><br>
+              <p2 style="color: #212431; font-size:small">April 2024</p2><br>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/ccc.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="The Cuse Café Connect App is a digital platform designed specifically for university students working on-campus café jobs. It facilitates the process of trading or dropping shiSs among students, managing shiS schedules, and streamlining communica#on between students and café supervisors."><i class="bx bx-plus"></i></a>
+                <a href="https://github.com/RohanBick?tab=repositories" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/imagedetec.jpg" height="255px" alt="">
+              <p1 style="color: #212431; font-size:medium">Facial Expression Detector Using TensorFlow</p1><br>
+              <p2 style="color: #212431; font-size:small">June 2018</p2><br>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/imagedetec.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="This project aims to compare the performance of convolutional neural networks (CNNs) trained on the Fer2013 dataset with raw image pixels against those fed with additional information like face landmarks and HOG features. Results demonstrate enhanced CNN accuracy with supplementary data, addressing challenges such as unaligned images and incorrect labeling within Fer2013. Additionally, the inclusion of batch normalization further improves model performance, showcasing advancements in facial expression recognition techniques."><i class="bx bx-plus"></i></a>
+                <a href="https://github.com/RohanBick?tab=repositories" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Services</h2>
+          <p>Providing Industry Quality services with utmost dedication and commitment.</p><br>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
+            <div class="icon"><i class="bi bi-briefcase"></i></div>
+            <h4 class="title"><a href="">Full Stack Development</a></h4>
+            <p class="description">Creating End to End systems to manage and scale your applications.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon"><i class="bi bi-card-checklist"></i></div>
+            <h4 class="title"><a href="">Mobile App Development</a></h4>
+            <p class="description">Creating Apps with best UI & UX with robust backend Support for seamless user interaction with Client.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon"><i class="bi bi-bar-chart"></i></div>
+            <h4 class="title"><a href="">ML & DL</a></h4>
+            <p class="description">Creating Accurate NLP and CV models with optimum deployment methods for improving the performace of exsisting systems.</p>
+          </div>
+          
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Testimonials</h2>
+          
+        </div>
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Rohan's expertise in Python scripting greatly enhanced API functionality and data visualization, contributing to streamlined operations and informed decision-making. His contributions were instrumental in facilitating a smooth migration process and improving overall efficiency.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="" class="testimonial-img" alt="">
+                <h3>Jaya Ghosh</h3>
+                <h4>Senior Vice President, Regions Bank</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Rohan played a pivotal role particularly in managing and facilitating key projects alongside a team of six. His leadership was evident in the Asia Miles integration with the Hong Kong division project. Great developer and awesome sense of humour!
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="" class="testimonial-img" alt="">
+                <h3>Divya Maheshwara</h3>
+                <h4>Vice President, Standard Chartered Bank</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Rohan's comprehensive Full Stack skills significantly contributed to the development and optimization of e-commerce platforms, demonstrating his commitment to enhancing both functionality and security. His proactive approach to problem-solving greatly benefited the organization.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="" class="testimonial-img" alt="">
+                <h3>Satish Rana</h3>
+                <h4>Senior Manager, KGE Technologies Pvt Ltd</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="300">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Rohan's work in optimizing both frontend and backend technologies significantly boosted the performance and accessibility of our applications. His dedication to delivering effective solutions greatly improved our organization's efficiency and enhanced the user experience for all.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="" class="testimonial-img" alt="">
+                <h3>Aditi Juneja</h3>
+                <h4>GoOffer Hyperlocal</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Currently Looking for full time oppurtunities as a Software Engineer and would love to connect with you regarding this. Here are my contact details:</p>
+        </div>
+
+        <div class="row" data-aos="fade-in">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>239 Greenwood Pl, Syracuse, NY 13210</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>rohanbhowmick1722@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+1 315 886 5393</p>
+              </div>
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2916.0051236131917!2d-76.1272738159149!3d43.04132369671843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f30d09b58f29%3A0x1f679c77f8a3cbcb!2s239%20Greenwood%20Pl%2C%20Syracuse%2C%20NY%2013210!5e0!3m2!1sen!2sus!4v1713562685671" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" required>
+              </div>
+              <div class="form-group">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="10" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>iPortfolio</span></strong>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
+        Designed By Rohan Bhowmick with <span style="color: red; size: 20px;"> &#x2764;</a>
+      </div>
+      
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
